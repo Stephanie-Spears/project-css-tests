@@ -104,25 +104,31 @@ div.my-cascade li a {
 
 /*MEDIA QUERIES PAGE*/
 
-div.column {
-  /*border: 3px solid purple;*/
+
+/*BOOTSTRAP PAGE*/
+
+div.bootstrap-content {
+
 }
 
+/*MIN-WIDTH, CONTENTS ACTIVED WHEN THE SCREEN IS AT LEAST 768PX OR MORE WIDE*/
 @media screen and (min-width: 768px) {
   .column {
-    width: 300px;
+    width: 30%;
     float: left;
     padding: 20px;
   }
 }
 
+/*MAX-WIDTH AND MIN-WIDTH--WILL ONLY ACTIVATE WHEN SCREEN IS AT LEAST 600PX AND LESS THAN 768PX*/
 @media screen and (max-width: 768px) and (min-width: 600px) {
   body {
-    background-color: black;
+    background-color: gray;
     color: white;
   }
 }
 
+/*MAX-WIDTH WILL ONLY ACTIVATE WHEN SCREEN IS SMALLER THAN 480PX*/
 @media screen and (max-width: 480px) {
   body {
     background-color: teal;
