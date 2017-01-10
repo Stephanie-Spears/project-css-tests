@@ -68,10 +68,13 @@ img.index-my-float-right {
   width: 30%;
 }
 
-div.index-column-left {
+/*div.index-column-left {
   border: 3px solid black;
-  width: 33.333%;
+  width: 300px;
   float: left;
+}*/
+div.col-md-4 {
+  border: 3px solid purple;
 }
 
 img.index-my-float-left-large {
@@ -106,10 +109,6 @@ div.my-cascade li a {
 
 
 /*BOOTSTRAP PAGE*/
-
-div.bootstrap-content {
-
-}
 
 /*MIN-WIDTH, CONTENTS ACTIVED WHEN THE SCREEN IS AT LEAST 768PX OR MORE WIDE*/
 @media screen and (min-width: 768px) {
