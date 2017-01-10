@@ -1,10 +1,58 @@
+
+/*ALL PAGES STYLING*/
+img {
+  margin: 1em;
+}
+
+body {
+  border: 3px solid red;
+}
+
+div.container{
+  border: 3px solid blue;
+  /*background-color: yellow;*/
+}
+
+div.my-menu {
+  /*border: 3px solid gray;*/
+  font-weight: bold;
+}
+
+.my-unselected {
+  opacity: .5;
+  filter: alpha(opactity=30);
+}
+
+div.header, div.footer {
+  border: 3px solid green;
+  background-color: grey;
+  width: 100%;
+  text-align: center;
+  clear: both;
+}
+
+div.content{
+  background-color: #4286f4
+}
+
 /*INDEX STYLING*/
+
+div.my-box-model {
+  border: 3px solid purple;
+  background-color: grey;
+}
+
+div.my-box-model p{
+  border: 3px solid red;
+  margin: 2em;
+  padding: 2em;
+  background-color: aquamarine;
+}
 
 div.index-main {
   border: 3px solid green;
   color: green;
   background-color: #eee;
-  /*overflow: auto;*/
   min-height: 100%;
 }
 
@@ -20,21 +68,10 @@ img.index-my-float-right {
   width: 30%;
 }
 
-.index-header, .index-footer {
-  border: 3px solid blue;
-  width: 100%;
-  text-align: center;
-  clear: both;
-}
-
 div.index-column-left {
-  border: 3px solid purple;
+  border: 3px solid black;
   width: 33.333%;
   float: left;
-}
-
-p.index-clear-right {
-  clear: right;
 }
 
 img.index-my-float-left-large {
@@ -46,28 +83,48 @@ img.index-my-float-left-large {
 }
 
 
-/*ALL PAGES STYLING*/
-div.my-menu {
-  border: 3px solid gray;
+/*TESTING CASCADING*/
+div.my-cascade {
+  background-color: #a8c2ed;
+}
+div.my-cascade p {
+  background-color: #c5eda8;
+}
+div.my-cascade p a {
   font-weight: bold;
+  color: red;
+}
+div.my-cascade li {
+background-color: green;
+}
+div.my-cascade li a {
+  background-color: purple;
 }
 
-.my-unselected {
-  /*border: 3px solid purple;*/
-  opacity: .5;
-  filter: alpha(opactity=30);
+
+/*MEDIA QUERIES PAGE*/
+
+div.media-content {
+  background-color: #4286f4
 }
 
-img {
-  margin: 1em;
+@media screen and (min-width: 768px) {
+  .column {
+    width: 300px;
+    float: left;
+    padding: 20px;
+  }
 }
 
-body {
-  border: 3px solid aquamarine;
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  body {
+    background-color: black;
+    color: white;
+  }
 }
 
-div.container{
-  border: 3px solid red;
-  background-color: yellow;
-  /*font-weight: bold;*/
+@media screen and (max-width: 480px) {
+  body {
+    background-color: teal;
+  }
 }
