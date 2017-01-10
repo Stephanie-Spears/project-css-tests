@@ -1,44 +1,73 @@
-.container{
-  background-color: yellow;
+/*INDEX STYLING*/
+
+div.index-main {
+  border: 3px solid green;
+  color: green;
+  background-color: #eee;
+  /*overflow: auto;*/
+  min-height: 100%;
 }
 
-img {
-  margin: 1em;
-}
-
-div.main {
-color: green;
-background-color: #eee;
-}
-
-img.my-float-left {
+img.index-my-float-left {
+  border: 3px dotted blue;
   float: left;
   width: 30%;
 }
 
-img.my-float-right {
-float: right;
-width: 30%;
+img.index-my-float-right {
+  border: 3px dashed red;
+  float: right;
+  width: 30%;
 }
 
-.header, .footer {
-  width: 100%;
+.index-header, .index-footer {
   border: 3px solid blue;
+  width: 100%;
   text-align: center;
+  clear: both;
 }
 
-div.column-left {
-  width: 30%;
+div.index-column-left {
+  border: 3px solid purple;
+  width: 33.333%;
   float: left;
 }
 
-img.my-float-left-large {
+p.index-clear-right {
+  clear: right;
+}
+
+img.index-my-float-left-large {
+  border: 3px solid yellow;
   width: 75%;
   margin-left: 0em;
   margin-right: 1em;
   margin-bottom: 1em;
 }
 
-div.my-menu {
 
+/*ALL PAGES STYLING*/
+div.my-menu {
+  border: 3px solid gray;
+  font-weight: bold;
+}
+
+.my-unselected {
+  /*border: 3px solid purple;*/
+  opacity: .5;
+  filter: alpha(opactity=30);
+}
+
+img {
+  margin: 1em;
+}
+
+body {
+  border: 3px solid aquamarine;
+}
+
+div.container{
+  border: 3px solid red;
+  background-color: yellow;
+  /*font-weight: bold;*/
 }
