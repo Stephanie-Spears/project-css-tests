@@ -32,7 +32,7 @@ div.header, div.footer {
 }
 
 div.content{
-  background-color: #4286f4
+  /*background-color: #4286f4*/
 }
 
 /*INDEX STYLING*/
@@ -104,8 +104,8 @@ div.my-cascade li a {
 
 /*MEDIA QUERIES PAGE*/
 
-div.media-content {
-  background-color: #4286f4
+div.column {
+  /*border: 3px solid purple;*/
 }
 
 @media screen and (min-width: 768px) {

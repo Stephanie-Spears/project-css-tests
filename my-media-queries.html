@@ -33,8 +33,6 @@
             <li>the parenthesis defines <em>when</em> teh css in this query should be applied to our site</li>
             <li>the curly braces contain the css that will be applied IF/WHEN the conditions we define are TRUE</li>
           </ul>
-        </div>
-        <div class="column">
           <p>Media queries often specify media type. it allows for the following options to be selected: </p>
           <ul>
             <li>all: refers to any and all devices (default)</li>
@@ -43,15 +41,13 @@
             <li>speech: refers to screen readers which assist people with impaired site</li>
           </ul>
         </div>
-        <div class="column">
+          <div class="column">
           <h3>Media Features</h3>
           <ul>
             <li>height: describes teh height of the viewport in pixels. This media feature can also have a min or max prefix added onto it. (ie. max-height which would define the maximum height a media-query's css should apply to)</li>
             <li>width: describes the width of the viewport, in pixels. can also have a max-min prefix.</li>
             <li>orientation: indicates whether the viewport is in landcape(wider than it is tall) or portrait mode(taller than it is wide)</li>
           </ul>
-        </div>
-        <div class="column">
           <p>Let's use the width media feature in our media query. We'll also include the MAX prefix to specify a maximum width.</p>
           <p>@media screen and (max-width) {content}</p>
           <ul>
@@ -70,8 +66,6 @@
             <li>if we don't want to worry about MULTIPLE media queries applying at ONCE, then we can apply both a min and a max value to a single query.</li>
             <li>@media screen and (max-width: 768px) and (min-width: 600px) { body {  background-color: black;  color: white;} }</li>
           </ul>
-        </div>
-        <div class="column">
           <p>WE CAN DEFINE ANY CSS IN MEDIA QUERIES</p>
           <ul>
             <li>Oftentimes sites will display multiple columns on large screens, then condense them into a single column on smaller screens.</li>
@@ -79,6 +73,7 @@
             <li>@media screen and (min-width: 768px) { .column  {width: 300px;  float: left;  padding: 20px;} }</li>
           </ul>
         </div>
+
 
 
       </div> <!--end content div-->
